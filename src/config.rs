@@ -102,7 +102,7 @@ const CHARS: &[char] = &[
     'm', 'n', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
 ];
 
-pub const RENDEZVOUS_SERVERS: &[&str] = &["10.1.250.117"];
+pub const RENDEZVOUS_SERVERS: &[&str] = &["remote.test.com"];
 pub const RS_PUB_KEY: &str = "0O1PREhNN8qsdnGk74jwnkGSl1tUreaOOqMAqZ9cHGA=";
 
 pub const RENDEZVOUS_PORT: i32 = 21116;
@@ -433,6 +433,7 @@ fn patch(path: PathBuf) -> PathBuf {
 impl Config2 {
     fn load() -> Config2 {
         let mut config = Config::load_::<Config2>("2");
+        config.options.insert("key".to_string(), RS_PUB_KEY.to_string());
         let mut store = false;
         if let Some(mut socks) = config.socks {
             let (password, _, store2) =
