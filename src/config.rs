@@ -102,7 +102,7 @@ const CHARS: &[char] = &[
     'm', 'n', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
 ];
 
-pub const RENDEZVOUS_SERVERS: &[&str] = &["remote.test.com"];
+pub const RENDEZVOUS_SERVERS: &[&str] = &["rustdesk.fscut.com"];
 pub const RS_PUB_KEY: &str = "0O1PREhNN8qsdnGk74jwnkGSl1tUreaOOqMAqZ9cHGA=";
 
 pub const RENDEZVOUS_PORT: i32 = 21116;
