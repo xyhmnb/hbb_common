@@ -103,7 +103,7 @@ const CHARS: &[char] = &[
 ];
 
 pub const RENDEZVOUS_SERVERS: &[&str] = &["rustdesk.fscut.com"];
-pub const RS_PUB_KEY: &str = "0O1PREhNN8qsdnGk74jwnkGSl1tUreaOOqMAqZ9cHGA=";
+pub const RS_PUB_KEY: &str = "ezHmydumIV5IHwHEg5hLyc5JHmoxSpy1DaF8cuu+xIs=";
 
 pub const RENDEZVOUS_PORT: i32 = 21116;
 pub const RELAY_PORT: i32 = 21117;
